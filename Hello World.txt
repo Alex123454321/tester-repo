@@ -1,3 +1,8 @@
 print("Hello World!");
 print("Кот Матроскин");
 print("Юзлес");
+print("Hello!!!");
+print("Котики");
+print("Hello World!");
+print("Кот Матроскин");
+print("Юзлес");
