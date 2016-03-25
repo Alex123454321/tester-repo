@@ -1,2 +1,12 @@
 # Тут указывается используемый в проекте язык программирования, можно указать несколько
 language: java
+jdk:
+  - openjdk6
+script:
+  mvn verify
+after_success:
+  - chmod a+x deploy.sh
+  - ./deploy.sh
+after_failure:
+  - cat com.codeaffine.module-a/target/surefire-reports/*.txt
+  - cat com.codeaffine.module-b/target/surefire-reports/*.txt
