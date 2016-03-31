@@ -4,10 +4,10 @@
   <artifactId>TINKO</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-    <sourceDirectory>/var/jenkins_home/workspace/Testing/ex.java</sourceDirectory>
+    <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
-        <directory>/var/jenkins_home/workspace/Testing/</directory>
+        <directory>src</directory>
         <excludes>
           <exclude>**/*.java</exclude>
         </excludes>
