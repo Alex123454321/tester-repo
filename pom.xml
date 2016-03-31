@@ -4,7 +4,7 @@
   <artifactId>TINKO</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-    <sourceDirectory>/job/Testing/ws/</sourceDirectory>
+    <sourceDirectory>/job/Testing/ws/ex.java</sourceDirectory>
     <resources>
       <resource>
         <directory>src</directory>
