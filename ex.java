@@ -1,7 +1,7 @@
 import com.thoughtworks.selenium.*;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Tesst;
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ex {
@@ -15,7 +15,7 @@ public class ex {
 
 	@Test
 	public void test123() throws Exception {
-		selenium.open("http://tinko.rtz.io/");
+		selenium.open("http://tinkozzz.rtz.io/");
 		selenium.waitForPageToLoad("20000");
 	/*	selenium.click("link=Личный кабинет");
 		for (int second = 0;; second++) {
