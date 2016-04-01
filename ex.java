@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class Tinko {
+public class ex {
 	private Selenium selenium;
 
 	@Before
