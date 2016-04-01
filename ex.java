@@ -1,38 +1,45 @@
-package test.java;
+import com.thoughtworks.selenium.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-import org.testng.annotations.Test;
-
-import com.thoughtworks.selenium.DefaultSelenium;
-import com.thoughtworks.selenium.Selenium;
-
-import org.testng.annotations.BeforeMethod;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
-import java.io.FileWriter;
-
-import org.testng.annotations.AfterMethod;
-
-public class ex {
+public class Tinko {
 	private Selenium selenium;
-  @Test
- public void test123() throws Exception {
-		selenium.open("http://tinko.rtz.io/");
-		selenium.waitForPageToLoad("20000");
-	}
-  
-  @BeforeMethod
- 
-  public void setUp() throws Exception {
-		selenium = new DefaultSelenium("46.101.110.47", 4444, "*chrome", "http://vs7.io/");
+
+	@Before
+	public void setUp() throws Exception {
+		selenium = new DefaultSelenium("localhost", 4444, "*chrome", "http://vs7.io/");
 		selenium.start();
 	}
-  
-  @AfterMethod
-  
-  public void tearDown() throws Exception {
-		selenium.stop();
+
+	@Test
+	public void test123() throws Exception {
+		selenium.open("http://tinko.rtz.io/");
+		selenium.waitForPageToLoad("20000");
+	/*	selenium.click("link=Личный кабинет");
+		for (int second = 0;; second++) {
+			if (second >= 60) fail("timeout");
+			try { if (selenium.isElementPresent("id=mini-login")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		selenium.type("id=mini-login", "artosis12345123@mail.ru");
+		selenium.type("id=mini-password", "4793546224");
+		selenium.click("css=button.btn.btn-primary");
+		selenium.waitForPageToLoad("20000");
+		selenium.open("http://tinko.rtz.io/p-244265.html");
+		selenium.waitForPageToLoad("20000");
+		selenium.click("xpath=(//button[@type='button'])[6]");
+		for (int second = 0;; second++) {
+			if (second >= 60) fail("timeout");
+			try { if (selenium.isElementPresent("link=Êîðçèíà - 1 ïîç.")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		Thread.sleep(5000);*/
 	}
 
+	@After
+	public void tearDown() throws Exception {
+		selenium.stop();
+	}
 }
