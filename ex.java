@@ -1,7 +1,7 @@
 import com.thoughtworks.selenium.*;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.Tesst;
 import static org.junit.Assert.*;
 
 public class ex {
